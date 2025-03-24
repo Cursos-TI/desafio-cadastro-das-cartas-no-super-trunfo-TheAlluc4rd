@@ -34,8 +34,8 @@ int main() {
     printf("Número de pontos turísticos: ");
     scanf("%d", &pontos1);
 
-    densidade1 = populacao1 / area1;
-    capita1 = (float) pib1 / populacao1;
+    densidade1 = populacao1  / area1;
+    capita1 = (float) (pib1* 1000000000) / populacao1;
 
     printf("\nAgora da 2ª carta: \n");
     printf("Estado: ");
@@ -60,7 +60,7 @@ int main() {
     scanf("%d", &pontos2);
 
     densidade2 = populacao2 / area2;
-    capita2 = (float) pib2 / populacao2;
+    capita2 = (float) (pib2* 1000000000) / populacao2;
     
     printf("\nCarta 1:\nEstado: %s\n", estado1);
     printf("Código da carta: %s\n", carta1);
