@@ -13,22 +13,22 @@ int main() {
     float capita1, capita2;
         
     printf("Primeiro cadastre 1 carta: \n");
-    printf("Estado: ");
+    printf("Estado (1 caracter): ");
     scanf("%s", estado1);
     
-    printf("Codigo da carta: ");
+    printf("Codigo da carta (3 caracteres): ");
     scanf("%s", carta1);
 
-    printf("Nome da cidade: ");
+    printf("Nome da cidade (Use de _ no lugar do espaço, caso haja): ");
     scanf("%s", cidade1);
 
     printf("População: ");
     scanf("%d", &populacao1);
 
-    printf("Área: ");
+    printf("Área (Em km²): ");
     scanf("%f", &area1);
 
-    printf("PIB: ");
+    printf("PIB (Em bilhões): ");
     scanf("%f", &pib1);
 
     printf("Número de pontos turísticos: ");
@@ -38,22 +38,22 @@ int main() {
     capita1 = (float) (pib1* 1000000000) / populacao1;
 
     printf("\nAgora da 2ª carta: \n");
-    printf("Estado: ");
+    printf("Estado (1 caracter): ");
     scanf("%s", estado2);
     
-    printf("Codigo da carta: ");
+    printf("Codigo da carta (3 caracteres): ");
     scanf("%s", carta2);
 
-    printf("Nome da cidade: ");
+    printf("Nome da cidade (Use de _ no lugar do espaço, caso haja): ");
     scanf("%s", cidade2);
 
     printf("População: ");
     scanf("%d", &populacao2);
 
-    printf("Área: ");
+    printf("Área (em km²): ");
     scanf("%f", &area2);
 
-    printf("PIB: ");
+    printf("PIB (em bilhões): ");
     scanf("%f", &pib2);
 
     printf("Número de pontos turísticos: ");
