@@ -63,9 +63,8 @@ int main() {
     densidade2 = populacao2 / area2;
     capita2 = (float) (pib2* 1000000000) / populacao2;
 
-    super1 = (populacao1 + area1 + pib1 + pontos1 + capita1 - densidade1);
-    super2 = (populacao2 + area2 + pib2 + pontos2 + capita2 - densidade2);
-
+    super1 = (populacao1 + area1 + pib1 + pontos1 + capita1 + (1/densidade1));
+    super2 = (populacao2 + area2 + pib2 + pontos2 + capita2 + (1/densidade2));
     
     printf("\nCarta 1:\nEstado: %s\n", estado1);
     printf("Código da carta: %s\n", carta1);
@@ -97,7 +96,6 @@ int main() {
     printf("Densidade Populacional: Carta %d venceu\n", densidade1 < densidade2);
     printf("PIB per Capita: Carta %d venceu\n", pib1 > pib2);
     printf("Super Poder: Carta %d venceu\n", super1 > super2);
-
 
     return 0;
 }
